@@ -1,4 +1,4 @@
-package com.and.concurrency.geekjava36unit.nineteen;
+package com.and.geekjava36unit.nineteen;
 
 import java.util.concurrent.CountDownLatch;
 
