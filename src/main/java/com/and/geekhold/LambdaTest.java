@@ -68,7 +68,7 @@ public class LambdaTest {
             .stream().collect(joining(",", "[", "]"))
         );
 
-        // 使用toMap获取订单ID+下单用户名的Map
+        // 使用toMap获取订单ID+下单用户名的Map,entrySet(),之后将key和value当成一个整体存放，在iterator之后可以直接getKey(),getValue(),和keySet()
         orders.stream().collect(toMap(Order::getId, Order::getCustomerName)).entrySet().forEach(System.out::println);
         orders.stream().map(Order::getCustomerName).forEach(System.out::println);
 
